@@ -3,7 +3,6 @@
 #Cada elemento ds posição i será comparado com o elemento da posição i + 1
   # caso esse elemento (i) for maior que i + 1 eles trocam de lugar.
 
-  
 import numpy as np
 import time 
 import pandas as pd
@@ -17,14 +16,11 @@ def bubleSort(alist):
         temp = alist[i]
         alist[i] = alist[i+1]
         alist[i+1] = temp
-        plt.bar( i , alist )
-        plt.show()
   
 
-alist = np.random.randint(10, size = 1000)
+alist = np.random.randint(10, size = 100)
+print(alist)
 print('----------------------------------------------------------')
-
-array = [1,9,0,7,2,5,8,4]
-bubleSort(array)
-print(array)
+bubleSort(alist)
+print(alist)
   
